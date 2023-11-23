@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
-import App from './App.vue'
+import stylesAppCommon from '@/assets/styles/app.scss'
+import App from '@/App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+
+app.use(stylesAppCommon);
+app.mount('#app');

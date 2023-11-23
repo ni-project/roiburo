@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+        <map-container />
+
+        <gallery-container />
+
+        <team-container />
+
+        <details-container />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import MapContainer from '@/components/Map/MapContainer'
+    import GalleryContainer from '@/components/Gallery/GalleryContainer'
+    import TeamContainer from '@/components/Team/TeamContainer'
+    import DetailsContainer from '@/components/Details/DetailsContainer'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+
+        components: {
+            MapContainer,
+            GalleryContainer,
+            TeamContainer,
+            DetailsContainer
+        }
+    }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

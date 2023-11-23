@@ -1,0 +1,110 @@
+@import 'normalize';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+  font-weight: 400;
+}
+
+#app {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 124px;
+  padding: 56px 0 124px;
+}
+
+.middle-wrap {
+  width: 100%;
+  max-width: 1736px;
+  margin: 0 auto;
+  transition: 0.3s;
+}
+
+h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 68px;
+  font-weight: 600;
+}
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 600;
+}
+
+.link {
+  display: inline;
+  color: rgba(40, 40, 40, 0.6);
+  text-decoration: none;
+  transition: 0.2s;
+
+  &:hover {
+    color: #282828;
+  }
+}
+
+.margin {
+  &-sm {
+    margin-top: 8px;
+  }
+
+  &-md {
+    margin-top: 24px;
+  }
+
+  &-lg {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 1780px) {
+  .middle-wrap {
+    padding: 0 72px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .container {
+    row-gap: 100px;
+    padding: 32px 0 100px;
+  }
+
+  .middle-wrap {
+    padding: 0 36px;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    row-gap: 64px;
+    padding: 24px 0 64px;
+  }
+
+  .middle-wrap {
+    padding: 0 12px;
+  }
+
+  h1, h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
