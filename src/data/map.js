@@ -1,5 +1,5 @@
 
-let MAP_MARKER = require('@/assets/images/icons/map-marker.svg');
+let mapMarker = require('@/assets/images/icons/map-marker.svg');
 
 export const DATA_MAP = {
     coords: [55.755864, 37.617698],
@@ -11,7 +11,7 @@ export const DATA_MAP = {
             coords: [55.8200, 37.6100],
             options: {
                 iconLayout: 'default#image',
-                iconImageHref: MAP_MARKER,
+                iconImageHref: mapMarker,
                 iconImageSize: [56, 64],
                 iconImageOffset: [-28, -64],
             }
